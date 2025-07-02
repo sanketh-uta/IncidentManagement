@@ -6,7 +6,7 @@ server:
 
 spring:
   datasource:
-    url:  jdbc:postgres://localhost:5432/incident_management_system_dev
+    url:  jdbc:postgresql://localhost:5432/incident_management_system_dev
     username: sankethbolishetti
     password: sanbro2000
   jpa:
