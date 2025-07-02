@@ -1,2 +1,14 @@
 version: 1.0
 env: dev
+
+server:
+  port: 7002
+
+spring:
+  datasource:
+    url:  jdbc:postgres://localhost:5432/incident_management_system_dev
+    username: sankethbolishetti
+    password: sanbro2000
+  jpa:
+    hibernate:
+      ddl-auto: update
