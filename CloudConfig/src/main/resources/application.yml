@@ -1,0 +1,16 @@
+server:
+  port: 7001
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/sanketh-uta/IncidentManagement.git
+
+manage:
+  endpoint:
+    web:
+      exposure:
+        include: "*"

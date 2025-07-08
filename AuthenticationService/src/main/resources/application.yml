@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: authentication
+  datasource:
+    url: jdbc:postgresql://localhost:5432/incident_management_system_dev
+    username: sankethbolishetti
+    password: sanbro2000
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  profiles:
+    active: dev
+
+  config:
+    import: configserver:http://localhost:7001
+
+
+geo:
+  key : "686841852a261471556285ebu8b7846"
+
+secret:
+  key: "this-is-the-secret-key-for-my-application"
